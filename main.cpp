@@ -11,8 +11,11 @@ using std::string;
 
 template<typename T>
 T move(T&& oth) {
-    return --oth;
+    --oth;
+    return oth;
 }
+
+
 
 void foo(const string s) {
 
